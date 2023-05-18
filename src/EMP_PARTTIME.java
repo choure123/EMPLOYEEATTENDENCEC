@@ -5,11 +5,11 @@ public class EMP_PARTTIME {
         int EMP_RATE_PER_HOUR = 20;
         int emphour = 0;
         int empwage = 0;
-        double empCheck = Math.floor(Math.random() * 10) % 2;
+        double empCheck = Math.floor(Math.random() * 10) % 3;
         if (empCheck == IS_FULL_TIME) ;
-        emphour = 8;
+              emphour = 8;
 
-             else if (empCheck == IS_PART_TIME)
+              if (empCheck == IS_PART_TIME)
             emphour = 4;
         empwage = emphour * EMP_RATE_PER_HOUR;
         System.out.println("EMP WAGE :" + empwage);
